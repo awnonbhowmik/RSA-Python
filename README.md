@@ -1,7 +1,7 @@
 # RSA-Python
 The RSA algorithm coded in Python
 
-Created in collaboration with https://github.com/7enTropy7
+Created in collaboration with ![Unnikrishnan Menon](https://github.com/7enTropy7)
 
 **RSA Algorithm**
 * Pick two large primes <a href="https://www.codecogs.com/eqnedit.php?latex=p,q" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p,q" title="p,q" /></a>
