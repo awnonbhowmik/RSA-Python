@@ -10,6 +10,8 @@ The RSA algorithm coded in Python
 * **Encrypt: **<a href="https://www.codecogs.com/eqnedit.php?latex=c\equiv&space;m^e\mod&space;n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c\equiv&space;m^e\mod&space;n" title="c\equiv m^e\mod n" /></a>
 * **Decrypt: **<a href="https://www.codecogs.com/eqnedit.php?latex=m\equiv&space;c^d\mod&space;n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?m\equiv&space;c^d\mod&space;n" title="m\equiv c^d\mod n" /></a>
 
-$\begin{array}{|c|c|}\hline\text{Message}&\text{H}&\text{e}&\text{l}&\text{l}&\text{o}\\\hline\text{ASCII Code}&72&101&108&108&111\\\hline p=11\\q=13\\n=143\\\phi(n)=120\\e=77\\\hline \text{Encryption}\\c\equiv m^e\mod n&63&95&114&114&89\\\hline de\equiv 1\mod \phi(n)\\77d\equiv1\mod 120\\d\equiv53\mod120\\\hline\text{Decrypted ASCII}\\m\equiv c^d\mod n&72&101&108&108&111\\\hline\text{Decrypted Message}&\text{H}&\text{e}&\text{l}&\text{l}&\text{o}\\\hline\end{array}\tag*{}$
+\[\begin{array}{|c|c|}\hline\text{Message}&\text{H}&\text{e}&\text{l}&\text{l}&\text{o}\\\hline\text{ASCII Code}&72&101&108&108&111\\\hline p=11\\q=13\\n=143\\\phi(n)=120\\e=77\\\hline \text{Encryption}\\c\equiv m^e\mod n&63&95&114&114&89\\\hline de\equiv 1\mod \phi(n)\\77d\equiv1\mod 120\\d\equiv53\mod120\\\hline\text{Decrypted ASCII}\\m\equiv c^d\mod n&72&101&108&108&111\\\hline\text{Decrypted Message}&\text{H}&\text{e}&\text{l}&\text{l}&\text{o}\\\hline\end{array}\tag*{}
+\]
+<script type="text/javascript" src="https://www.hostmath.com/Math/MathJax.js?config=OK"></script>
 And this is what a code says….
 ![rsa](https://user-images.githubusercontent.com/7680591/59566011-0e07e200-9028-11e9-9f54-449d0ff23a28.jpg)
