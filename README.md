@@ -1,6 +1,8 @@
 # RSA-Python
 The RSA algorithm coded in Python
 
+Created in collaboration with https://github.com/7enTropy7
+
 **RSA Algorithm**
 * Pick two large primes <a href="https://www.codecogs.com/eqnedit.php?latex=p,q" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p,q" title="p,q" /></a>
 * Compute <a href="https://www.codecogs.com/eqnedit.php?latex=n=pq" target="_blank"><img src="https://latex.codecogs.com/gif.latex?n=pq" title="n=pq" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\phi(n)=(p-1)(q-1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\phi(n)=(p-1)(q-1)" title="\phi(n)=(p-1)(q-1)" /></a>
