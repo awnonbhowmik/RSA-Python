@@ -10,8 +10,225 @@ The RSA algorithm coded in Python
 * **Encrypt: **<a href="https://www.codecogs.com/eqnedit.php?latex=c\equiv&space;m^e\mod&space;n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c\equiv&space;m^e\mod&space;n" title="c\equiv m^e\mod n" /></a>
 * **Decrypt: **<a href="https://www.codecogs.com/eqnedit.php?latex=m\equiv&space;c^d\mod&space;n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?m\equiv&space;c^d\mod&space;n" title="m\equiv c^d\mod n" /></a>
 
-\[\begin{array}{|c|c|}\hline\text{Message}&\text{H}&\text{e}&\text{l}&\text{l}&\text{o}\\\hline\text{ASCII Code}&72&101&108&108&111\\\hline p=11\\q=13\\n=143\\\phi(n)=120\\e=77\\\hline \text{Encryption}\\c\equiv m^e\mod n&63&95&114&114&89\\\hline de\equiv 1\mod \phi(n)\\77d\equiv1\mod 120\\d\equiv53\mod120\\\hline\text{Decrypted ASCII}\\m\equiv c^d\mod n&72&101&108&108&111\\\hline\text{Decrypted Message}&\text{H}&\text{e}&\text{l}&\text{l}&\text{o}\\\hline\end{array}\tag*{}
-\]
-<script type="text/javascript" src="https://www.hostmath.com/Math/MathJax.js?config=OK"></script>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-_3" />
+      <mtd>
+        <mtable columnalign="center center" rowspacing="4pt" columnspacing="1em" rowlines="solid solid none none none none solid none solid none none solid none solid" columnlines="solid" frame="solid">
+          <mtr>
+            <mtd>
+              <mtext>Message</mtext>
+            </mtd>
+            <mtd>
+              <mtext>H</mtext>
+            </mtd>
+            <mtd>
+              <mtext>e</mtext>
+            </mtd>
+            <mtd>
+              <mtext>l</mtext>
+            </mtd>
+            <mtd>
+              <mtext>l</mtext>
+            </mtd>
+            <mtd>
+              <mtext>o</mtext>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mtext>ASCII Code</mtext>
+            </mtd>
+            <mtd>
+              <mn>72</mn>
+            </mtd>
+            <mtd>
+              <mn>101</mn>
+            </mtd>
+            <mtd>
+              <mn>108</mn>
+            </mtd>
+            <mtd>
+              <mn>108</mn>
+            </mtd>
+            <mtd>
+              <mn>111</mn>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mi>p</mi>
+              <mo>=</mo>
+              <mn>11</mn>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mi>q</mi>
+              <mo>=</mo>
+              <mn>13</mn>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mi>n</mi>
+              <mo>=</mo>
+              <mn>143</mn>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mi>&#x03D5;<!-- ϕ --></mi>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+              <mo>=</mo>
+              <mn>120</mn>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mi>e</mi>
+              <mo>=</mo>
+              <mn>77</mn>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mtext>Encryption</mtext>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mi>c</mi>
+              <mo>&#x2261;<!-- ≡ --></mo>
+              <msup>
+                <mi>m</mi>
+                <mi>e</mi>
+              </msup>
+              <mspace width="0.667em" />
+              <mi>mod</mi>
+              <mspace width="thinmathspace" />
+              <mspace width="thinmathspace" />
+              <mi>n</mi>
+            </mtd>
+            <mtd>
+              <mn>63</mn>
+            </mtd>
+            <mtd>
+              <mn>95</mn>
+            </mtd>
+            <mtd>
+              <mn>114</mn>
+            </mtd>
+            <mtd>
+              <mn>114</mn>
+            </mtd>
+            <mtd>
+              <mn>89</mn>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mi>d</mi>
+              <mi>e</mi>
+              <mo>&#x2261;<!-- ≡ --></mo>
+              <mn>1</mn>
+              <mspace width="0.667em" />
+              <mi>mod</mi>
+              <mspace width="thinmathspace" />
+              <mspace width="thinmathspace" />
+              <mi>&#x03D5;<!-- ϕ --></mi>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mn>77</mn>
+              <mi>d</mi>
+              <mo>&#x2261;<!-- ≡ --></mo>
+              <mn>1</mn>
+              <mspace width="0.667em" />
+              <mi>mod</mi>
+              <mspace width="thinmathspace" />
+              <mspace width="thinmathspace" />
+              <mn>120</mn>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mi>d</mi>
+              <mo>&#x2261;<!-- ≡ --></mo>
+              <mn>53</mn>
+              <mspace width="0.667em" />
+              <mi>mod</mi>
+              <mspace width="thinmathspace" />
+              <mspace width="thinmathspace" />
+              <mn>120</mn>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mtext>Decrypted ASCII</mtext>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mi>m</mi>
+              <mo>&#x2261;<!-- ≡ --></mo>
+              <msup>
+                <mi>c</mi>
+                <mi>d</mi>
+              </msup>
+              <mspace width="0.667em" />
+              <mi>mod</mi>
+              <mspace width="thinmathspace" />
+              <mspace width="thinmathspace" />
+              <mi>n</mi>
+            </mtd>
+            <mtd>
+              <mn>72</mn>
+            </mtd>
+            <mtd>
+              <mn>101</mn>
+            </mtd>
+            <mtd>
+              <mn>108</mn>
+            </mtd>
+            <mtd>
+              <mn>108</mn>
+            </mtd>
+            <mtd>
+              <mn>111</mn>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mtext>Decrypted Message</mtext>
+            </mtd>
+            <mtd>
+              <mtext>H</mtext>
+            </mtd>
+            <mtd>
+              <mtext>e</mtext>
+            </mtd>
+            <mtd>
+              <mtext>l</mtext>
+            </mtd>
+            <mtd>
+              <mtext>l</mtext>
+            </mtd>
+            <mtd>
+              <mtext>o</mtext>
+            </mtd>
+          </mtr>
+        </mtable>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
 And this is what a code says….
 ![rsa](https://user-images.githubusercontent.com/7680591/59566011-0e07e200-9028-11e9-9f54-449d0ff23a28.jpg)
