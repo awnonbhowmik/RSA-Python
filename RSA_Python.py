@@ -27,7 +27,7 @@ def isprime(n):
     elif n == 2:
         return True
     else:
-        for i in range(1, int(sqrt(n)) + 1):
+        for i in range(2, int(sqrt(n)) + 1,2):
             if n % i == 0:
                 return False
     return True
