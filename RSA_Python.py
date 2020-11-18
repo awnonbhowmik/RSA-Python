@@ -112,6 +112,22 @@ def decrypt(msg_ciphertext, package):
     return (''.join(msg_plaintext))
 
 
+def encryptUsingPrivate(msg_plaintext, package):
+    #unpack key value pair
+    d, n = package
+    msg_ciphertext = [pow(ord(c), d, n) for c in msg_plaintext]
+    return msg_ciphertext
+
+
+def decryptUsingPublic(msg_ciphertext, package):
+    e, n = package
+    msg_plaintext = [chr(pow(c, e, n)) for c in msg_ciphertext]
+    # No need to use ord() since c is now a number
+    # After decryption, we cast it back to character
+    # to be joined in a string for the final result
+    return (''.join(msg_plaintext))
+
+
 #-------------------------------------------------------------
 #driver program
 if __name__ == "__main__":
@@ -124,8 +140,15 @@ if __name__ == "__main__":
     print("Private Key: ", private)
     msg = input("Write msg: ")
     print([ord(c) for c in msg])
+
     encrypted_msg = encrypt(msg, public)
     print("Encrypted msg: ")
     print(''.join(map(lambda x: str(x), encrypted_msg)))
     print("Decrypted msg: ")
     print(decrypt(encrypted_msg, private))
+
+    encrypted_msg = encryptUsingPrivate(msg, private)
+    print("Encrypted msg using private key: ")
+    print(''.join(map(lambda x: str(x), encrypted_msg)))
+    print("Decrypted msg using public key: ")
+    print(decryptUsingPublic(encrypted_msg, public))
