@@ -4,13 +4,13 @@ The RSA algorithm coded in Python
 Created in collaboration with [Unnikrishnan Menon](https://github.com/7enTropy7)
 
 **RSA Algorithm**
-* Pick two large primes <a href="https://www.codecogs.com/eqnedit.php?latex=p,q" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p,q" title="p,q" /></a>
-* Compute <a href="https://www.codecogs.com/eqnedit.php?latex=n=pq" target="_blank"><img src="https://latex.codecogs.com/gif.latex?n=pq" title="n=pq" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\phi(n)=(p-1)(q-1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\phi(n)=(p-1)(q-1)" title="\phi(n)=(p-1)(q-1)" /></a>
-* Choose a public key <a href="https://www.codecogs.com/eqnedit.php?latex=e" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e" title="e" /></a> such that <a href="https://www.codecogs.com/eqnedit.php?latex=1<e<\phi(n)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?1<e<\phi(n)" title="1<e<\phi(n)" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\text{gcd}(e,\phi(n))=1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\text{gcd}(e,\phi(n))=1" title="\text{gcd}(e,\phi(n))=1" /></a>
-* Calculate <a href="https://www.codecogs.com/eqnedit.php?latex=d" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d" title="d" /></a> such that <a href="https://www.codecogs.com/eqnedit.php?latex=de\equiv1\mod&space;\phi(n)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?de\equiv1\mod&space;\phi(n)" title="de\equiv1\mod \phi(n)" /></a>
-* Let the message **key** be <a href="https://www.codecogs.com/eqnedit.php?latex=m" target="_blank"><img src="https://latex.codecogs.com/gif.latex?m" title="m" /></a>
-* **Encrypt: **<a href="https://www.codecogs.com/eqnedit.php?latex=c\equiv&space;m^e\mod&space;n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c\equiv&space;m^e\mod&space;n" title="c\equiv m^e\mod n" /></a>
-* **Decrypt: **<a href="https://www.codecogs.com/eqnedit.php?latex=m\equiv&space;c^d\mod&space;n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?m\equiv&space;c^d\mod&space;n" title="m\equiv c^d\mod n" /></a>
+* Pick two large primes $p,q$.
+* Compute $n=pq$ and $\varphi(n)=\mathrm{lcm}(p-1,q-1)$
+* Choose a public key $e$ such that $1<e<\varphi(n)$ and $\gcd(e,\varphi(n))=1$
+* Calculate $d$ such that $de\equiv 1 \pmod\varphi(n)$
+* Let the message **key** be $m$
+* **Encrypt: ** $c\equiv m^e\pmod n$
+* **Decrypt: ** $m\equiv c^d\pmod n$
 
 ![image](https://user-images.githubusercontent.com/7680591/59566357-3a722d00-902d-11e9-991c-b67e5f369722.png)
 
